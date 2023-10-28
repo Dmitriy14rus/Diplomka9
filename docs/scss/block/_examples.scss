@@ -1,0 +1,213 @@
+.examples {
+    position: relative;
+    background: $white;
+    height: 832px;
+    z-index: 0;
+}
+
+.examples::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: $orange-bg;
+    z-index: -8;
+}
+
+
+.examples {
+    &__mask {
+        background: $orange-bg;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 396px;
+        height: 100%;
+    }
+
+    &__title {
+        position: relative;
+        top: 110px;
+        width: 252px;
+        font-size: 36px;
+        @extend %bold;
+    }
+
+    &__title::before {
+        content: "";
+        position: absolute;
+        background-image: url(/img/element-2.svg);
+        width: 160px;
+        height: 160px;
+        top: -76px;
+        right: -969px;
+        z-index: 0;
+    }
+
+    &__title::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -39px;
+        width: 120px;
+        height: 18px;
+        background: #F9BB88;
+        z-index: -8
+    }
+
+
+
+
+
+    &__swiper-slide {
+        display: flex;
+    }
+
+    &__list {
+
+        padding-top: 140px;
+        margin-right: 223px;
+    }
+
+    &__list-title {
+        line-height: 160%;
+        width: 404px;
+        font-size: 23px;
+        @extend %semibold;
+        margin-bottom: 30px;
+    }
+
+    &__ul {
+        margin-bottom: 40px;
+    }
+
+    &__ul:last-child {
+        margin-top: 20px;
+    }
+
+    &__item {
+        color: rgba(32, 32, 32, 0.70);
+        line-height: 210%;
+    }
+
+    &__item-text {
+        color: $dark;
+        line-height: 210%;
+        @extend %semibold;
+        margin-left: 5px;
+    }
+
+
+
+    &__price {
+        margin-left: 42px;
+        font-size: 23px;
+        color: $dark;
+        line-height: 160%;
+        @extend %semibold;
+        text-transform: uppercase;
+    }
+
+
+
+    &__button {
+        width: 263px;
+        height: 50px;
+        background: $orange-btn;
+        border-radius: 2px;
+        color: $white;
+    }
+
+    &__button:hover {
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__img::before {
+        content: "";
+        position: absolute;
+        background-image: url(/img/element.svg);
+        width: 96px;
+        height: 96px;
+        top: 369px;
+        left: -172px;
+    }
+
+
+
+    &__img-img {
+        width: 490px;
+        height: 630px;
+    }
+
+    &__swiper-pagination {}
+
+    &__navigation {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 627px;
+        gap: 65px;
+    }
+
+    &__nav {
+
+        width: 270px;
+        height: 130px;
+        background: $dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__swiper-button-prev path:hover,
+    &__swiper-button-next path:hover {
+        padding: 30px;
+        stroke: $orange-btn;
+        transition: all .2s ease-in-out;
+    }
+
+
+    &__stick {
+        height: 34px;
+        width: 1.8px;
+        background-color: $white;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+}
+
+.container {}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-pagination-bullet {
+    margin-right: 18px;
+    width: 9px;
+    height: 9px;
+    background: $white;
+    border-radius: 0%;
+    opacity: inherit;
+}
+
+.swiper-pagination-bullet-active {
+    position: relative;
+    top: 4px;
+    width: 17px;
+    height: 17px;
+    background: $dark;
+}

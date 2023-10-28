@@ -1,0 +1,115 @@
+.appeal {
+    position: relative;
+    margin-bottom: 127px;
+
+    &__title {
+        position: relative;
+        width: 344px;
+        font-size: 36px;
+        @extend %bold;
+        line-height: 120%;
+        margin-bottom: 40px;
+
+    }
+
+    &__title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -39px;
+        width: 120px;
+        height: 18px;
+        background: $orange-bg;
+        z-index: -8;
+    }
+
+
+
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+    }
+
+    &__box::before {
+        content: "";
+        position: absolute;
+        background-image: url(/img/element.svg);
+        width: 96px;
+        height: 96px;
+        top: -173px;
+        right: -50px;
+    }
+
+    &__list {
+        width: 386px;
+    }
+
+    &__list1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__list-title {
+        width: 300px;
+        font-size: 23px;
+        @extend %semibold;
+        line-height: 160%;
+        margin-bottom: 30px;
+    }
+
+    &__list-title1 {
+        width: 277px;
+        font-size: 23px;
+        @extend %semibold;
+        line-height: 160%;
+        margin-bottom: -15px;
+    }
+
+    &__text {
+        line-height: 160%;
+        width: 378px;
+
+    }
+
+    &__list-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    &__icon-icon {
+        position: relative;
+    }
+
+    &__icon-icon::before {
+        content: "";
+        position: absolute;
+        top: -9px;
+        left: -6px;
+        width: 21px;
+        height: 80px;
+        background: $orange-bg;
+    }
+
+    &__icon {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__icon-text {
+        @extend %semibold;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    &__img {
+        position: relative;
+        top: 18px;
+    }
+
+
+}
